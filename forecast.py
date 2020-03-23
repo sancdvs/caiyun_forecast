@@ -1,9 +1,8 @@
-import requests
 import json
 import re
 import time
+import requests
 from data import data
-
 
 skycon_zh = {'CLEAR_DAY':'晴','CLEAR_NIGHT':'晴','PARTLY_CLOUDY_DAY':'多云','PARTLY_CLOUDY_NIGHT':'多云','CLOUDY':'阴','LIGHT_HAZE':'轻度霾','MODERATE_HAZE':'中度霾','HEAVY_HAZE':'重度霾','LIGHT_RAIN':'小雨','MODERATE_RAIN':'中雨','HEAVY_RAIN':'大雨','STORM_RAIN':'暴雨','FOG':'雾','LIGHT_SNOW':'小雪','MODERATE_SNOW':'中雪','HEAVY_SNOW':'大雪','STORM_SNOW':'暴雪','DUST':'浮尘','SAND':'沙尘','WIND':'大风','THUNDER_SHOWER':'雷阵雨','HAIL':'冰雹','SLEET':'雨夹雪'}
 
@@ -51,25 +50,4 @@ def forecast():
 while True:
     for i in forecast():
         print(i)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
