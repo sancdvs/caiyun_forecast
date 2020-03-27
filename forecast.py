@@ -23,11 +23,20 @@ def forecast():
     content = json.loads(content)
     content = content['result']['daily']
 
-    skycon = content['skycon']
-    pressure = content['pressure']
-    temperature = content['temperature']
-    humidity = content['humidity']
     astro = content['astro']
+    precipitation = content['precipitation']
+    temperature = content['temperature']
+    wind = content['wind']
+    humidity = content['humidity']
+    cloudrate = content['cloudrate']
+    pressure = content['pressure']
+    visibility = content['visibility']
+    dswrf = content['dswrf']
+    air_quality = content['air_quality']
+    skycon = content['skycon']
+    skycon_08h_20h = content['skycon_08h_20h']
+    skycon_20h_32h = content['skycon_20h_32h']
+    life_index = content['life_index']
 
     fx = []
     for i in range(len(skycon)):
